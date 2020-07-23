@@ -7,9 +7,40 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="results.html" method="GET"></form>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="18" max="69" required />
+      </div>
+      <div>
+        <h2>Favorite Foods</h2>
+        <label for="chickenfeet">Chicken Feet</label>
+        <input type="checkbox" name="chickenfeet" id="chickenfeet" />
 
-    <script src="keys.js"></script>
-    <script src="app.js"></script>
+        <label for="porkbelly">Pork Belly</label>
+        <input type="checkbox" name="porkbelly" id="porkbelly" />
+
+        <label for="durian">Durian</label>
+        <input type="checkbox" name="durian" id="durian" />
+      </div>
+      <div>
+        <label for="file">File</label>
+        <input type="file" name="file" id="file" />
+      </div>
+      <div>
+        <button type="submit">Submit Info</button>
+      </div>
+    </form>
+
+    <script src="./keys.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
